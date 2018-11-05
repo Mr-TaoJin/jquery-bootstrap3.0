@@ -1,0 +1,67 @@
+/* html5 Reset Stylesheet*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video{
+    margin:0; padding:0; border:0; outline:0;vertical-align:baseline; background:transparent; box-sizing:border-box; 
+    -moz-box-sizing:border-box; -webkit-box-sizing:border-box;
+}
+:focus{outline: none;}
+article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary{display:block;}
+ul,li{list-style:none;}
+blockquote, q{quotes:none;font-size: 14px}
+blockquote:before, blockquote:after, q:before, q:after{content:''; content:none;}
+a{margin:0; padding:0; border:0; font-size:100%; vertical-align:baseline; background:transparent; text-decoration:none; transition:all 0.2s; -webkit-transition:all 0.2s; box-sizing:border-box; -moz-box-sizing:border-box; -webkit-box-sizing:border-box;color: #333;outline: none;}
+a:focus,a:hover{text-decoration:none;}
+ins{background-color:#ff9; color:#000; text-decoration:none;}
+mark{background-color:transparent; color:#ccc; font-style:inherit; font-weight:normal;}
+del{text-decoration: line-through;}
+abbr[title], dfn[title]{border-bottom:1px dotted #000; cursor:help;}
+table{border-collapse:collapse; border-spacing:0;outline: none;}
+hr{display:block; height:1px; border:0; border-top:1px solid #cccccc; margin:1em 0; padding:0;}
+input, select{box-shadow: none !important; vertical-align:middle; transition:all 0.2s; -webkit-transition:all 0.2s; box-sizing:border-box; -moz-box-sizing:border-box; -webkit-box-sizing:border-box;outline: none;}
+button{cursor: pointer; border:none;  box-sizing:border-box; -moz-box-sizing:border-box; -webkit-box-sizing:border-box;outline: none;}
+i{font-style: inherit;}
+em{font-style: inherit;}
+body{
+    line-height:1;
+    font:14px "微软雅黑",Arial,Helvetica,sans-serif;
+    color:#666;
+    background-color:rgb(246, 246, 246);
+}    
+/* 自定义基本样式 */
+.clear_float:after{content:"";display:block;clear:both;}
+.clear_height{content:"";display:table;}
+.text_center{text-align:center;}
+.text_left{text-align:left;}
+.text_right{text-align:right;}
+
+.page{
+    height:500px;
+    background: #ff0000;
+    margin:auto;
+}
+/* 超小屏幕（手机，小于 768px） */
+@media (max-width: 768px) {
+    .page{ width:100%; }
+}
+/* 小屏幕（平板，大于等于 768px） */
+@media (min-width: 768px) {
+    .page{ width:100%; }
+}
+/* 中等屏幕（桌面显示器，大于等于 992px） */
+@media (min-width: 992px) {
+    .page{ width:80%; }
+}
+/* 大屏幕（大桌面显示器，大于等于 1200px） */
+@media (min-width: 1200px) {
+    .page{ width:60%; }
+}
+/* 首页 */
